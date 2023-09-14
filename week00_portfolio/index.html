@@ -8,17 +8,136 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="card portfolio-card">
-        <img class="profile-pic" src="./assets/images/marcossantosserrano.jpg" alt="">
-        <div class="education-card">
-            <h2>Educación</h2>
+    <div class="card portfolio-card">    
+        <div class="me-card">
+            <img class="profile-pic" src="./assets/images/marcossantosserrano.jpg" alt="">
+            <div class="card name-card">
+                <h1>Marcos Santos Serrano</h1>
+                <input type="checkbox" id="show-more"/>
+            </div>
         </div>
-        <div class="card personal-info-card"><h2>Info Personal</h2></div>
-        <div class="card profile-card"><h2>Perfil</h2></div>
-        <div class="card proyects-card"><h2>Proyectos</h2></div>
-        <div class="card certs-card"><h2>Certificados</h2></div>
-        <div class="card experience-card"><h2>Experiencia</h2></div>
-        <div class="card languages-card"><h2>Languages</h2></div>
+        <div class="card education-card container">
+            
+            <div class="content">
+                <h2>Educación</h2>
+                <h3>Desarrollo de software</h3>
+                    <h5>Sept 2019 - Presente <br>42 Madrid, Madrid - Fundación Telefónica</h5>
+                
+                <div class="wrap-collabsible">
+                    <input id="collapsible" class="toggle" type="checkbox">
+                    <label for="collapsible" class="lbl-toggle">Show more</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                            Un campus de programación disruptivo en
+                            el que estoy aprendiendo C, C++, Docker,
+                            Bash scripting y seguiré en constante
+                            formación en sus ramas de
+                            especializaciones como las de ML/IA ,
+                            ciberseguridad o desarrollo web.
+                            FPGS Desarrollo de Aplicaciones Web
+                            Sept 2017 -Junio 2019
+                        </p>
+                        <hr>
+                        <h3>CIFP Ponferrada</h3>
+                        <p>
+                            He aprendido Html, CSS, Java, JavaScript,
+                            SQL, PHP, Access.
+                            Mi proyecto final presentado fué una
+                            aplicación web dinámica realizada con
+                            Laravel framework y utilizando diversas
+                            API's.
+                        </p>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+        </div>
+        <div class="card personal-info-card"><h2>Info Personal</h2>
+                <div>
+                    <img src="./assets/images/github-logo.png" alt="">
+                    <a href="santosserranomarcos@gmail.com
+                    https://github.com/marc459">&nbsp;&nbsp;Email</a>
+                </div>
+                <div>
+                    <img src="./assets/images/linkedin-logo.png" alt="">
+                    
+                    <a href="https://www.linkedin.com/in/marcos-
+                    santos-serrano-92326b179">&nbsp;&nbsp;Linkedin</a>
+                </div>
+        </div>
+        <div class="card profile-card"><h2>Perfil</h2>
+            <p>
+                Soy un desarrollador de software con
+                experiencia competente en C y C++.
+                Desarrollo proyectos escalables con
+                Javascript y Python con sus librerias y
+                framework.
+                Mi enfoque actual es Big Data y Cloud.
+            </p>
+        </div>
+        <div class="card certs-card"><h2>Certificados</h2>
+            <p>
+                <div class="cert-title">
+                    <img src="./assets/images/practitioner-aws-logo.jpeg" alt=""/>&nbsp;&nbsp;
+                    <h3>AWS Certified Cloud Practitioner</h3>
+                </div>
+                <h5>Enero 2023 - Enero 2026</h5>
+                <p>
+                    AWS Academy Cloud Foundations
+                    Conceptos primordiales de la infraestructura
+                    de AWS , sus servicios y su utilización.
+                </p>
+                <hr>
+                <div class="cert-title">
+                    <img src="./assets/images/SAA-aws-logo.jpeg" alt=""/>&nbsp;&nbsp;
+                    <h3>
+                        AWS Certified Solutions Architect -
+                        Associate(SAA-C03)
+                    </h3>
+                </div>
+                <h5>Enero 2023 - Enero 2026</h5>
+                Conceptos avanzados de cloud, diseño y
+                arquitectura en la nube.
+            </p>
+        </div>
+        <div class="card proyects-card"><h2>Proyectos</h2>
+            <h3>Ft_irc</h3>
+            <h5>Octubre 2022 - Abril 2023</h4>
+            <p>
+                <a href="https://github.com/dalexhd/ft_irc">Ft_irc</a><br>
+                Skills: C++, POO, automatización de
+                pruebas, trabajo en equipo.
+                Protocolo de comunicación en tiempo
+                real con sockets.
+            </p>
+        </div>
+        <div class="card languages-card">
+            
+            <h2>Languages</h2>
+            <div class="languages-title">
+            <img src="./assets/images/languages-logo.png" alt="">&nbsp;&nbsp;
+            <p>
+                Inglés (nivel intermedio) - Titulación Oxford B1 <br><br>
+
+                Español (Idioma nativo)
+            </p>
+        </div>
+        </div>
+        <div class="card experience-card"><h2>Experiencia</h2>
+            <h3>Frontend Developer</h3>
+            <h5>Marzo 2019 - Junio 2019</h5>
+            <p>
+                Candamena, Madrid
+                Contrato en prácticas trabajando con
+                Angular, Bootstrap, MongoDB, Docker
+                aplicando metodologias ágiles SCRUM.
+                Funciones principales desempeñadas:
+                Mejoré la UI/UX del proyecto y optimicé
+                peticiones a la BBDD.
+            </p>
+        </div>
+
         <div class="card skills-card">
             <h2>Skills</h2>
             <ul>

@@ -1,5 +1,17 @@
-# APUNTES
+# PORTFOLIO
+
+
+
+#  PARADIGMAS y TECNOLOGIAS USADaS
+
+- Css Grid
+- Flexbox
+- Repetitive Image BG
+- 
+
+# CHEATSHEET
 Parallax scrolling
+CSS GRID
 
 Background repeated images ->
 https://www.toptal.com/designers/subtlepatterns/tag/all/
