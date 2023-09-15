@@ -219,7 +219,7 @@ h1{
 /* MEDIA QUERYS - RESPONSIVE DESIGN */
 
 /*// BIGGER SCREENS */
-@media only screen and (min-width: 900px) and (max-width: 1300px) {
+/* @media only screen and (min-width: 700px) and (max-width: 1300px) {
     .portfolio-card .card{
         height: 410px;
     }
@@ -234,26 +234,27 @@ h1{
 
         height: 600px;
     }
-}
+} */
 
-/*// MEDIUM SCREEN (TABLETS) */
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+/* // MEDIUM SCREEN (TABLETS) */
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
 
     .portfolio-card{
         width: 100vw;
         display: block;
+        padding: 40px;
 
-        /* display: block; */
+
         
     }
     .me-card{
         display: block;
     }
     .portfolio-card .card{
-        height: 400px;
+        height: 300px;
     }
     .portfolio-card .card:hover{
-        height: 410px;
+        height: 310px;
     }
 
     .portfolio-card .long-card:hover{
@@ -264,23 +265,26 @@ h1{
 }
 
 /*// SMALL SCREEN (PHONES) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
     .portfolio-card{
         width: 100vw;
         display: block;
+        padding: 15px;
     }
     .portfolio-card .card{
-        height: 600px;
+        height: 400px;
+        
+        /* width: 100vw; */
     }
     .portfolio-card .card:hover{
-        height: 610px;
+        height: 410px;
     }
     .me-card{
         display: block;
     }
     .portfolio-card .long-card:hover{
-        height: 1000px;
+        height: 600px;
     }
 
 }
