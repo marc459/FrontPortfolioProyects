@@ -1,20 +1,21 @@
 # PORTFOLIO
 
+Mi web CV built in HTML and CSS.
 
-
-#  PARADIGMAS y TECNOLOGIAS USADaS
+## PARADIGMAS y CONCEPTOS WEB USADOS
 
 - Css Grid
 - Flexbox
-- Repetitive Image BG
+- Repetitive Image bg
 - Transitions && animations CSS
+- Responsive design (Media Queries)
 
-# CHEATSHEET
+## CHEATSHEET
+
 Parallax scrolling
 CSS GRID
 
-Background repeated images ->
-https://www.toptal.com/designers/subtlepatterns/tag/all/
+Background repeated images -> https://www.toptal.com/designers/subtlepatterns/tag/all/
 
 CSS gradient color ->
 https://cssgradient.io/
