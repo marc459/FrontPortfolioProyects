@@ -7,7 +7,7 @@
 - Css Grid
 - Flexbox
 - Repetitive Image BG
-- 
+- Transitions && animations CSS
 
 # CHEATSHEET
 Parallax scrolling
