@@ -15,6 +15,7 @@
 
 
 body{
+
     background: url("../assets/images/dot-grid.png");
     margin: 0px;
     padding: 0px;
@@ -28,10 +29,8 @@ body{
 h1{
     /* font-family:url("../assets/fonts/MADE TOMMY Bold_PERSONAL USE.otf"), Arial, Helvetica, sans-serif !important; */
     font-family: 'MadeTommy', Arial, Helvetica, sans-serif;
-
-
-    
 }
+
 .portfolio-card h2{
     font-weight: 800;
     /* display: inline-block; */
@@ -218,29 +217,61 @@ h1{
 }
 
 /* MEDIA QUERYS - RESPONSIVE DESIGN */
-@media (max-width: 900px) {
-    .portfolio-card{
-        width: 100%;
-    }
+
+/*// BIGGER SCREENS */
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
     .portfolio-card .card{
-        height: 500px;
+        height: 410px;
     }
     .portfolio-card .card:hover{
-        height: 610px;
+        height: 600px;
     }
     .me-card{
-    
+        
         display: block;
     }
     .portfolio-card .long-card:hover{
 
-        height: 700px;
+        height: 600px;
     }
 }
 
-@media (min-width: 900px) and (max-width: 1300px) {
+/*// MEDIUM SCREEN (TABLETS) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+    .portfolio-card{
+        width: 100vw;
+        display: block;
+
+        /* display: block; */
+        
+    }
+    .me-card{
+        display: block;
+    }
     .portfolio-card .card{
+        height: 400px;
+    }
+    .portfolio-card .card:hover{
+        height: 410px;
+    }
+
+    .portfolio-card .long-card:hover{
+
         height: 500px;
+    }
+
+}
+
+/*// SMALL SCREEN (PHONES) */
+@media only screen and (max-width: 600px) {
+
+    .portfolio-card{
+        width: 100vw;
+        display: block;
+    }
+    .portfolio-card .card{
+        height: 600px;
     }
     .portfolio-card .card:hover{
         height: 610px;
@@ -249,9 +280,9 @@ h1{
         display: block;
     }
     .portfolio-card .long-card:hover{
-
-        height: 650px;
+        height: 1000px;
     }
+
 }
 
 
