@@ -51,8 +51,6 @@ h1{
     font-size: 1.2em;
 }
 
-
-
 /* CSS-GRID */
 
 .portfolio-card{
@@ -160,14 +158,10 @@ h1{
     grid-row: 4;
 }
 
-
-
 .portfolio-card .skills-card{
     grid-column: 3 / 4;
     grid-row: 5;
 }
-
-
 
 .personal-info-card  div{
     
