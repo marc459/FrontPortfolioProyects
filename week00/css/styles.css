@@ -16,6 +16,11 @@
 
 /* GLOBAL */
 body{
+    margin: 0px;
+    padding: 0px;
+
+}
+.body{
 
     background: url("../assets/images/dot-grid.png");
     margin: 0px;
