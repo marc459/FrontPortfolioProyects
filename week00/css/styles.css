@@ -20,10 +20,20 @@ body{
     background: url("../assets/images/dot-grid.png");
     margin: 0px;
     padding: 0px;
+    width: 100vw;
+}
+.cv-page{
+
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    /* border: 3px solid red; */
+}
+
+.portfolio-card .long-card:hover div.hr-div{
+    height: 0px;
+
 }
 
 h1{
@@ -37,7 +47,6 @@ h1{
 
 .portfolio-card h3{
     
-    
 }
 
 .portfolio-card h5{
@@ -49,6 +58,32 @@ h1{
 .portfolio-card a:link  {
     text-decoration:none;
     font-size: 1.2em;
+}
+
+/* CSS-DROPUP PANEL */
+.dropup{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color:white;
+    transition: all 2.5s ease;
+}
+.dropup h2{
+    display: inline-block;
+    font-family: 'MadeTommy', Arial, Helvetica, sans-serif;
+    color: gray;
+}
+body:hover .dropup{
+    color: black;
+    font-size: 1px;
+    /* display: none; */
+}
+body:hover .dropup{
+    height: 0px;
 }
 
 /* CSS-GRID */
