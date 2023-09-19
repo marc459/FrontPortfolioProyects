@@ -21,6 +21,10 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100vw;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 .cv-page{
 
@@ -28,7 +32,6 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    /* border: 3px solid red; */
 }
 
 .portfolio-card .long-card:hover div.hr-div{
