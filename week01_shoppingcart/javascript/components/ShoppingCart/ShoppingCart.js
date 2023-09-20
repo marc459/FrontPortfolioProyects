@@ -10,6 +10,7 @@ class ShoppingCart extends Schema {
     template() {
         return `
             <div class="tag">
+            <i class="fa fa-coffee"></i>          
                 ${this.attributes.text.value}
             </div>
         `;
@@ -17,6 +18,7 @@ class ShoppingCart extends Schema {
 
     templateCss() {
         return `
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="./javascript/components/ShoppingCart/styles.css">
         `;
     }

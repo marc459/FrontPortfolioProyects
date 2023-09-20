@@ -9,6 +9,8 @@ Shopping cart build with HTML, SASS and JS.
 ## PARADIGMAS y CONCEPTOS WEB USADOS
 
 - Web components en Vanilla JS
+- Preprocessador CSS - SASS
+- Font awsome
 
 ## CHEATSHEET
 
