@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module">
+
+
+        import ShoppingCart from './javascript/Shopping-Cart.js';
+        customElements.define('shopping-cart', ShoppingCart);
+    </script>
+</head>
+<body>
+    <div class="nav-bar">
+        <nav>
+            <ul>
+                <li><a href="/">Products</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="shopping-cart">
+                <Shopping-Cart color='red' text='Component'></Shopping-Cart>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
