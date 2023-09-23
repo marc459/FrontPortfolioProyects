@@ -4,13 +4,13 @@ Shopping cart build with HTML, SASS and JS.
 
 ## CMDS
 
-    sass --watch ./sass/styles.sass:./css/styles.css
+    sass --watch ./srcs/sass/styles.sass:./srcs/css/styles.css
 
 ## PARADIGMAS y CONCEPTOS WEB USADOS
 
 - Web components en Vanilla JS
 - Preprocessador CSS - SASS
-- Font awsome
+- Librerias de diseño y fuentes predefinidas - Font Awesome
 
 ## CHEATSHEET
 

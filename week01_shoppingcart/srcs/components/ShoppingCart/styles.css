@@ -1,0 +1,19 @@
+.sh-cart-div{
+    
+    /* padding: 10px; */
+}
+.sh-cart-div button{
+    color: rgb(153, 153, 153);
+    background-color: white;
+    border:2px solid rgb(153, 153, 153);
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+
+}
+
+.sh-cart-div button:hover {
+    box-shadow: 0px 0px 20px 15px rgba(255, 255, 255, 0.60);
+    cursor:pointer;
+  }
