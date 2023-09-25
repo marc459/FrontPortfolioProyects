@@ -4,13 +4,22 @@ import Schema from '../Schema.js';
 class TerminalCard extends Schema {
 
     initComponent() {
-        this.$text = this.shadowDOM.querySelector('.sh-cart-div');
+        // this.$img = this.shadowDOM.querySelector('.terminal-card');
     }
 
     template() {
         return `
             <div class="card terminal-card">
-                <img src="./srcs/assets/images/iphone-15-black.png" style="width:100px;" alt=""></img>
+                <img src="./srcs/assets/images/${this.attributes.img.value}" alt=""></img>
+                <div class="rate">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                </div>
+                ${this.attributes.title.value}
+                <button>Add to cart</button>
             </div>
         `;
     }
@@ -24,7 +33,8 @@ class TerminalCard extends Schema {
 
     mapComponentAttributes() {
         const attributesMapping = [
-            'text',
+            'img',
+            'title'
         ];
         attributesMapping.forEach(key => {
             if (!this.attributes[key]) {

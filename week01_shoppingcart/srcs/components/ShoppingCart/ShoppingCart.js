@@ -4,17 +4,16 @@ import Schema from '../Schema.js';
 class ShoppingCart extends Schema {
 
     initComponent() {
-        this.$text = this.shadowDOM.querySelector('.sh-cart-div');
+        // this.$text = this.shadowDOM.querySelector('.sh-cart-div');
     }
 
     template() {
         return `
             <div class="sh-cart-div">
-            <button>
-            <i class="fa fa-shopping-cart"></i>   
-            <!--  ${this.attributes.text.value} -->
-            </button>
-
+                <button>
+                <i class="fa fa-shopping-cart"></i>   
+                <!--  ${this.attributes.text.value} -->
+                </button>
             </div>
         `;
     }

@@ -1,10 +1,10 @@
 # SHOPPING CART
 
-Shopping cart build with HTML, SASS and JS.
+Shopping cart built with HTML, CSS and JS.
 
 ## CMDS
 
-    sass --watch ./srcs/sass/styles.sass:./srcs/css/styles.css
+    sass --watch ./srcs/sass/styles.sass:./srcs/css/styles.css 
     sass --watch ./srcs/components/GridCard/styles.sass:./srcs/components/GridCard/styles.css
 
 ## PARADIGMAS y CONCEPTOS WEB USADOS
@@ -17,3 +17,4 @@ Shopping cart build with HTML, SASS and JS.
 ## CHEATSHEET
 
     Web components -> https://www.paradigmadigital.com/dev/crea-tus-primeros-web-components/
+    CSS Grid Generator -> https://cssgrid-generator.netlify.app/
