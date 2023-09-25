@@ -14,7 +14,11 @@ Shopping cart built with HTML, CSS and JS.
 - Librerias de diseño y fuentes/iconos predefinidas - Font Awesome
 - CSSGridGenerator
 
-## CHEATSHEET
+## BIBLIOGRAPHY
 
     Web components -> https://www.paradigmadigital.com/dev/crea-tus-primeros-web-components/
+                    https://gomakethings.com/how-to-add-interactivity-to-browser-native-web-components-with-vanilla-js/
+    SHADOW DOM -> https://developer.mozilla.org/es/docs/Web/API/Web_components/Using_shadow_DOM
+                https://lenguajejs.com/webcomponents/shadow-dom/que-es-shadow-dom/
     CSS Grid Generator -> https://cssgrid-generator.netlify.app/
+    

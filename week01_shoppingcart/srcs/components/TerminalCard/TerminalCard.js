@@ -1,14 +1,18 @@
 import Schema from '../Schema.js';
 
 
+
+
 class TerminalCard extends Schema {
 
     initComponent() {
         // this.$img = this.shadowDOM.querySelector('.terminal-card');
+        function addtocart() { alert('hola')};
     }
-
+    
     template() {
-        return `
+        
+        let res  = `
             <div class="card terminal-card">
                 <img src="./srcs/assets/images/${this.attributes.img.value}" alt=""></img>
                 <div class="rate">
@@ -19,9 +23,12 @@ class TerminalCard extends Schema {
                     <i class="fa fa-regular fa-star"></i>
                 </div>
                 ${this.attributes.title.value}
-                <button>Add to cart</button>
+                <button onclick="addtocart()" id="addToCartButton" >Add to cart</button>
             </div>
         `;
+
+        return res;
+
     }
 
     templateCss() {
@@ -40,7 +47,7 @@ class TerminalCard extends Schema {
             if (!this.attributes[key]) {
                 this.attributes[key] = {value: ''};
             }
-            });
+        });
     }
 }
     

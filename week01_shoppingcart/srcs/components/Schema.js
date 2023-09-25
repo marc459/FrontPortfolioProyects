@@ -2,6 +2,7 @@ class Schema extends HTMLElement {
     constructor() {
         super();
         this.shadowDOM = this.attachShadow({mode: 'open'});
+        
     }
  
     disconnectedCallback() {
@@ -15,6 +16,7 @@ class Schema extends HTMLElement {
     }
  
     render() {
+        
         this.shadowDOM.innerHTML = `
             ${this.templateCss()}
             ${this.template()}
@@ -23,7 +25,8 @@ class Schema extends HTMLElement {
  
     mapComponentAttributes() {}
     templateCss() {}
-    template() {}
+    template() { }
     initComponent() {}
+    
  }
  export default Schema;

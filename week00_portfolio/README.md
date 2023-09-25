@@ -10,7 +10,7 @@ Mi web CV built in HTML and CSS.
 - Transitions && animations CSS
 - Responsive design (Media Queries)
 
-## CHEATSHEET
+## BIBLIOGRAPHY
 
 Parallax scrolling
 CSS GRID
