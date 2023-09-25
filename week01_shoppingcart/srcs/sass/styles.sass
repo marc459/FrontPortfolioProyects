@@ -1,14 +1,3 @@
-
-// // $fa-font-path: "./fontawesome/webfonts"
-// @import "./fontawesome/scss/fontawesome.scss";
-
-// //  importing Font Awesome styles
-// @import "./fontawesome/scss/solid.scss";
-// @import "./fontawesome/scss/brands.scss";
-
-// // importing a kit's custom icons
-// @import "./fontawesome/scss/_icons.scss";
-
 /* FONTS */
 @font-face 
     font-family: 'MadeTommy'
@@ -19,9 +8,6 @@
 body
     margin: 0px
     padding: 0px
-    display: flex
-    align-items: center
-    justify-content: center
 
 .nav-bar
     padding: 0px 40px 0px 40px 
@@ -29,7 +15,7 @@ body
     align-items: center
     justify-content: space-between
     background-color: rgb(13, 14, 43)
-    width: 100%
+    margin-bottom: 20px
 
 nav
     // border: 1px solid white
@@ -52,5 +38,32 @@ nav
     font-family: 'MadeTommy'
     color: white
     text-decoration: none
-    margin: 0
-    padding: 0
+
+$grid-columns: 3
+$grid-rows: 5
+
+.sh-panel
+
+    // border:1px solid black
+
+.sh-panel .grid
+    display: grid
+    width: 100%
+    grid-template-columns: repeat(#{$grid-columns}, 1fr)
+    grid-template-rows: repeat(#{$grid-rows}, 1fr)
+    grid-column-gap: 200px
+    grid-row-gap: 40px
+
+.sh-panel .grid div
+    display: flex
+    border: 1px solid grey
+    border-radius: 15px
+    align-content: center
+    justify-content: center
+
+
+
+@for $i from 1 through $grid-rows
+    @for $j from 1 through $grid-columns
+        .div#{$i * $grid-columns + $j}
+            grid-area: #{$i} / #{$j} / #{$i + 1} / #{$j + 1}

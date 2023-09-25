@@ -135,9 +135,6 @@ body:hover .dropup{
 
 .portfolio-card .long-card:hover{
     border: 2px solid yellow;
-
-    
-    
     height: 500px;
     position: relative;
     /* DEV */

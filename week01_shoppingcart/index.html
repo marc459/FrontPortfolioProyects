@@ -12,6 +12,11 @@
 
         import ShoppingCart from './srcs/components/ShoppingCart/ShoppingCart.js';
         customElements.define('shopping-cart', ShoppingCart);
+        import GridCard from './srcs/components/GridCard/GridCard.js';
+        customElements.define('grid-card', GridCard);
+            import TerminalCard from './srcs/components/TerminalCard/TerminalCard.js';
+            customElements.define('terminal-card', TerminalCard);
+
     </script>
 </head>
 <body>
@@ -24,9 +29,12 @@
         </nav>
         <section>
             <div class="shopping-cart">
-                <Shopping-Cart color='red' text='Component'></Shopping-Cart>
+                <shopping-cart color='red' text='Component'></shopping-cart>
             </div>
         </section>
+    </div>
+    <div class="sh-panel">
+        <grid-card></grid-card>
     </div>
 </body>
 </html>
