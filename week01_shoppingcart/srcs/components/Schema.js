@@ -3,10 +3,6 @@ class Schema extends HTMLElement {
         super();
         this.attachShadow({mode: 'open'});
         this.cartitems = 0;
-        this._text = '0';
-        // this.shadowDOM.innerHTMLC.onclick = e => alert("Inner target:");
-
-        
     }
  
     disconnectedCallback() {
@@ -17,7 +13,6 @@ class Schema extends HTMLElement {
         this.mapComponentAttributes();
         this.render()
         this.initComponent();
-  
     }
  
     render() {

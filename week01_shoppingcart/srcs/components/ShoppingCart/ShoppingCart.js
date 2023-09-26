@@ -2,17 +2,22 @@ import Schema from '../Schema.js';
 
 
 class ShoppingCart extends Schema {
-
+    // constructor()
+    // {
+    //     this.cartitems = 0;
+    // }
     initComponent() {
+        // this.attributes.cartitems.value=0;
         // this.$text = this.shadowDOM.querySelector('.sh-cart-div');
     }
 
     template() {
+
         let res= `
             <div class="sh-cart-div">
                 <button>
                 <i class="fa fa-shopping-cart"></i>   
-                <b style="color:red;">${this.attributes.text.value}</b>
+                <b style="color:red;">${this.attributes.cartitems.value}</b>
         `;
         res +=`
                 </button>
@@ -31,7 +36,7 @@ class ShoppingCart extends Schema {
 
     mapComponentAttributes() {
         const attributesMapping = [
-            'text',
+            'cartitems',
         ];
         attributesMapping.forEach(key => {
             if (!this.attributes[key]) {
@@ -40,11 +45,12 @@ class ShoppingCart extends Schema {
             });
     }
     static get observedAttributes() {
-        return ['text'];
+        return ['cartitems'];
     }
     attributeChangedCallback(name, oldValue, newValue) {
-        if (name === 'text' && oldValue !== newValue) {
-          this._text = newValue;
+        console.log(oldValue,newValue)
+
+        if (name === 'cartitems' && oldValue !== newValue) {
           this.render();
         }
     }

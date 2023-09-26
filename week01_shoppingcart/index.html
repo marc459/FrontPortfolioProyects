@@ -12,6 +12,10 @@
         customElements.define('shopping-cart', ShoppingCart);
         import GridCard from './srcs/components/GridCard/GridCard.js';
         customElements.define('grid-card', GridCard);
+
+        // var cartitems = 0;
+        // document.getElementById('shcart-component').setAttribute("cartitems", 0);
+
         
 
     </script>
@@ -29,7 +33,7 @@
         </nav>
         <section>
             <div class="shopping-cart">
-                <shopping-cart id="shcart-component" color='red' text='0'></shopping-cart>
+                <shopping-cart id="shcart-component" cartitems='0' ></shopping-cart>
                 <!-- <li><a id="testDOM" href="#">DOM</a></li> -->
 
             </div>

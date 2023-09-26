@@ -48,15 +48,13 @@ class TerminalCard extends Schema {
         this.shadowRoot.querySelector(".addtocart").onclick = e => {
             this.cartitems++;
             // document.getElementById('cartitems').innerHTML = this.cartitems;
-            document.getElementById('shcart-component').setAttribute("text", this.cartitems);
+            let gcaritems = document.getElementById('shcart-component').getAttribute("cartitems");
+            gcaritems++;
+            document.getElementById('shcart-component').setAttribute("cartitems", gcaritems);
             document.getElementById('testDOM').setAttribute("href", "/sevilla");
-
-            // alert(this.cartitems)
         }
-
-
     }   
-    
+
     mapComponentAttributes() {
         const attributesMapping = [
             'img',
