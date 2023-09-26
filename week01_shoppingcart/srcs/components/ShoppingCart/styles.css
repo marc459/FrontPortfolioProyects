@@ -49,4 +49,9 @@
   font: inherit;
   line-height: normal;
   padding: 0px;
+  width: 100%;
+}
+
+.sh-list button:hover{
+  background-color: rgb(0, 0, 0,0.5);
 }

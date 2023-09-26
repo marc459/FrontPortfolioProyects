@@ -11,7 +11,7 @@ class TerminalCard extends Schema {
         
         let res  = `
             <div class="card terminal-card">
-                <img src="./srcs/assets/images/${this.attributes.img.value}" alt=""></img>
+                <img src="${this.attributes.img.value}" alt=""></img>
                 <div class="rate">
                     <i class="fa fa-solid fa-star"></i>
                     <i class="fa fa-solid fa-star"></i>
