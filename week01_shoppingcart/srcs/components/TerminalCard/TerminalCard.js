@@ -51,7 +51,6 @@ class TerminalCard extends Schema {
             let gcaritems = document.getElementById('shcart-component').getAttribute("cartitems");
             gcaritems++;
             document.getElementById('shcart-component').setAttribute("cartitems", gcaritems);
-            document.getElementById('testDOM').setAttribute("href", "/sevilla");
         }
     }   
 

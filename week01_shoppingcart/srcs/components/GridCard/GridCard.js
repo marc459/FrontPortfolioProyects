@@ -2,6 +2,8 @@ import Schema from '../Schema.js';
 import TerminalCard from '../TerminalCard/TerminalCard.js';
 customElements.define('terminal-card', TerminalCard);
 
+
+ // BBDD
 let terminals = [{
     title: "iphone-15-black"
 },
