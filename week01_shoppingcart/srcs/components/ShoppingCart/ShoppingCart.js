@@ -16,6 +16,11 @@ class ShoppingCart extends Schema {
                     <b style="color:red;">${this.attributes.cartitems.value}</b>
                 </button>
                 <div class="sh-list">
+                    <button id='delete-list-btn' ><i class='fa fa-solid fa-trash'></i></button>
+                    <div class="list">
+
+                    </div>
+                
                     
                 <div>
             </div>
@@ -37,9 +42,11 @@ class ShoppingCart extends Schema {
             ${this.template()}
         `;
 
-
-        let inner = this.attributes.shoppinglist.value.trim(";").split(";").map((e) =>{
-            return "<p>" + e + "</p>";
+        listArray = this.attributes.shoppinglist.value.slice(1).split(";");
+        console.log(listArray)
+        // let inner = "<button id='delete-list-btn' ><i class='fa fa-solid fa-trash'></i></button>";
+        let inner = this.attributes.shoppinglist.value.slice(1).split(";").map((e) =>{
+            return "<p>" + e + " </p>";
     }).join("");
         this.shadowRoot.querySelector("#sh-list-btn").onclick = e => {
             this.togglesh=!this.togglesh;
@@ -48,7 +55,13 @@ class ShoppingCart extends Schema {
             else
                 this.shadowRoot.querySelector('.sh-list').setAttribute("style", "display:none;");
 
-            this.shadowRoot.querySelector('.sh-list').innerHTML = inner;
+            this.shadowRoot.querySelector('.list').innerHTML = inner;
+        }
+
+        this.shadowRoot.querySelector("#delete-list-btn").onclick = e => {
+            this.attributes.shoppinglist.value="";
+            this.attributes.cartitems.value=0
+            listArray = [];
         }
     }
 

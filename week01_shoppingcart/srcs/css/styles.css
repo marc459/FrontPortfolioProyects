@@ -6,7 +6,10 @@
   src: url("../assets/fonts/MadeTommyBold.otf") format("opentype"); }
 body {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  
+
+}
 
 .nav-bar {
   padding: 0px 40px 0px 40px;
