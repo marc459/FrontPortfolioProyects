@@ -1,11 +1,7 @@
 import Schema from '../Schema.js';
 
-
 class ShoppingCart extends Schema {
-    // constructor()
-    // {
-    //     this.cartitems = 0;
-    // }
+
     initComponent() {
         this.togglesh = false;
         // this.attributes.cartitems.value=0;
@@ -17,8 +13,8 @@ class ShoppingCart extends Schema {
         let res= `
             <div class="sh-cart-div">
                 <button id="sh-list-btn">
-                <i class="fa fa-shopping-cart"></i>   
-                <b style="color:red;">${this.attributes.cartitems.value}</b>
+                    <i class="fa fa-shopping-cart"></i>   
+                    <b style="color:red;">${this.attributes.cartitems.value}</b>
                 </button>
                 <div class="sh-list">
                     
@@ -39,10 +35,6 @@ class ShoppingCart extends Schema {
             ${this.templateCss()}
             ${this.template()}
         `;
-
-    }
-    initComponent()
-    {
         this.shadowRoot.querySelector("#sh-list-btn").onclick = e => {
             this.togglesh=!this.togglesh;
             if(this.togglesh)
@@ -50,6 +42,11 @@ class ShoppingCart extends Schema {
             else
                 this.shadowRoot.querySelector('.sh-list').setAttribute("style", "display:none;");
         }
+
+    }
+    initComponent()
+    {
+
     }
 
     mapComponentAttributes() {

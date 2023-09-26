@@ -10,7 +10,6 @@ class TerminalCard extends Schema {
     initComponent() {
         // this.$img = this.shadowDOM.querySelector('.terminal-card');
         
-        function addtocart() { alert('hola')};
     }
     
     template() {
