@@ -1,14 +1,9 @@
 import Schema from '../Schema.js';
 
-import ShoppingCart from '../ShoppingCart/ShoppingCart.js';
-        // customElements.define('shopping-cart', ShoppingCart);
-
-
 
 class TerminalCard extends Schema {
 
     initComponent() {
-        // this.$img = this.shadowDOM.querySelector('.terminal-card');
         
     }
     
@@ -46,10 +41,19 @@ class TerminalCard extends Schema {
         `;
         this.shadowRoot.querySelector(".addtocart").onclick = e => {
             this.cartitems++;
-            // document.getElementById('cartitems').innerHTML = this.cartitems;
             let gcaritems = document.getElementById('shcart-component').getAttribute("cartitems");
             gcaritems++;
             document.getElementById('shcart-component').setAttribute("cartitems", gcaritems);
+
+
+            let shoppinglist = document.getElementById('shcart-component').getAttribute("shoppinglist");
+            shoppinglist = shoppinglist +";" + this.attributes.title.value;
+            document.getElementById('shcart-component').setAttribute("shoppinglist", shoppinglist);
+
+
+
+
+
         }
     }   
 

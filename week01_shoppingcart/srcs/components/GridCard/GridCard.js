@@ -2,7 +2,6 @@ import Schema from '../Schema.js';
 import TerminalCard from '../TerminalCard/TerminalCard.js';
 customElements.define('terminal-card', TerminalCard);
 
-
  // BBDD
 let terminals = [{
     title: "iphone-15-black"
@@ -25,7 +24,6 @@ class GridCard extends Schema {
     }
 
     initComponent() {
-        // this.$text = this.shadowDOM.querySelector('.sh-cart-div');
     }
 
     template() {
