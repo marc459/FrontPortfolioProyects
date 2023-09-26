@@ -59,3 +59,17 @@
   grid-area: 5 / 3 / 6 / 4; }
 
 /*# sourceMappingURL=styles.css.map */
+
+
+/*// SMALL SCREEN (PHONES) */
+@media only screen and (max-width: 700px) {
+
+  .grid{
+      width: 100vw;
+      display: block;
+  }
+  .grid div{
+    margin-top: 20px;
+  }
+
+}
