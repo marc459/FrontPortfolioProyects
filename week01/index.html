@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./srcs/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module">
+        import ShoppingCart from './srcs/components/ShoppingCart/ShoppingCart.js';
+        customElements.define('shopping-cart', ShoppingCart);
+        import GridCard from './srcs/components/GridCard/GridCard.js';
+        customElements.define('grid-card', GridCard);
+
+
+    </script>
+</head>
+<body>
+    <div class="nav-bar">
+        <nav>
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="shopping-cart">
+                <shopping-cart id="shcart-component" shoppinglist="" cartitems='0' ></shopping-cart>
+            </div>
+        </section>
+
+    </div>
+    <div class="sh-panel">
+        <grid-card></grid-card>
+    </div>
+
+</body>
+</html>
