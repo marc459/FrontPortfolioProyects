@@ -1,7 +1,11 @@
 class Schema extends HTMLElement {
     constructor() {
         super();
-        this.shadowDOM = this.attachShadow({mode: 'open'});
+        this.attachShadow({mode: 'open'});
+        this.cartitems = 0;
+        this._text = '0';
+        // this.shadowDOM.innerHTMLC.onclick = e => alert("Inner target:");
+
         
     }
  
@@ -11,13 +15,13 @@ class Schema extends HTMLElement {
  
     connectedCallback() {
         this.mapComponentAttributes();
-        this.render();
+        this.render()
         this.initComponent();
+  
     }
  
     render() {
-        
-        this.shadowDOM.innerHTML = `
+            this.shadowRoot.innerHTML = `
             ${this.templateCss()}
             ${this.template()}
         `;
@@ -26,6 +30,7 @@ class Schema extends HTMLElement {
     mapComponentAttributes() {}
     templateCss() {}
     template() { }
+
     initComponent() {}
     
  }

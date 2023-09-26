@@ -1,5 +1,7 @@
 import Schema from '../Schema.js';
 
+import ShoppingCart from '../ShoppingCart/ShoppingCart.js';
+        // customElements.define('shopping-cart', ShoppingCart);
 
 
 
@@ -7,6 +9,7 @@ class TerminalCard extends Schema {
 
     initComponent() {
         // this.$img = this.shadowDOM.querySelector('.terminal-card');
+        
         function addtocart() { alert('hola')};
     }
     
@@ -23,12 +26,11 @@ class TerminalCard extends Schema {
                     <i class="fa fa-regular fa-star"></i>
                 </div>
                 ${this.attributes.title.value}
-                <button onclick="addtocart()" id="addToCartButton" >Add to cart</button>
+                <button class="addtocart" >Add to cart</button>
             </div>
         `;
 
         return res;
-
     }
 
     templateCss() {
@@ -37,7 +39,24 @@ class TerminalCard extends Schema {
             <link rel="stylesheet" href="./srcs/components/TerminalCard/styles.css">
         `;
     }
+    render() {
+        
+        this.shadowRoot.innerHTML = `
+            ${this.templateCss()}
+            ${this.template()}
+        `;
+        this.shadowRoot.querySelector(".addtocart").onclick = e => {
+            this.cartitems++;
+            // document.getElementById('cartitems').innerHTML = this.cartitems;
+            document.getElementById('shcart-component').setAttribute("text", this.cartitems);
+            document.getElementById('testDOM').setAttribute("href", "/sevilla");
 
+            // alert(this.cartitems)
+        }
+
+
+    }   
+    
     mapComponentAttributes() {
         const attributesMapping = [
             'img',

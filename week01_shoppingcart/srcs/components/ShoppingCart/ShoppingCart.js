@@ -8,14 +8,17 @@ class ShoppingCart extends Schema {
     }
 
     template() {
-        return `
+        let res= `
             <div class="sh-cart-div">
                 <button>
                 <i class="fa fa-shopping-cart"></i>   
-                <!--  ${this.attributes.text.value} -->
+                <b style="color:red;">${this.attributes.text.value}</b>
+        `;
+        res +=`
                 </button>
             </div>
         `;
+        return res;
     }
 
     templateCss() {
@@ -24,6 +27,7 @@ class ShoppingCart extends Schema {
             <link rel="stylesheet" href="./srcs/components/ShoppingCart/styles.css">
         `;
     }
+    
 
     mapComponentAttributes() {
         const attributesMapping = [
@@ -34,6 +38,15 @@ class ShoppingCart extends Schema {
                 this.attributes[key] = {value: ''};
             }
             });
+    }
+    static get observedAttributes() {
+        return ['text'];
+    }
+    attributeChangedCallback(name, oldValue, newValue) {
+        if (name === 'text' && oldValue !== newValue) {
+          this._text = newValue;
+          this.render();
+        }
     }
 }
     

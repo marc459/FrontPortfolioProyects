@@ -12,6 +12,7 @@
         customElements.define('shopping-cart', ShoppingCart);
         import GridCard from './srcs/components/GridCard/GridCard.js';
         customElements.define('grid-card', GridCard);
+        
 
     </script>
 </head>
@@ -21,19 +22,23 @@
             <ul>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a id="testDOM" href="/narnia">TestingDOM</a></li>
+
             </ul>
+            
         </nav>
         <section>
             <div class="shopping-cart">
-                <shopping-cart color='red' text='Component'></shopping-cart>
+                <shopping-cart id="shcart-component" color='red' text='0'></shopping-cart>
+                <!-- <li><a id="testDOM" href="#">DOM</a></li> -->
+
             </div>
         </section>
+
     </div>
     <div class="sh-panel">
         <grid-card></grid-card>
     </div>
-    <script>
-        
-    </script>
+
 </body>
 </html>
